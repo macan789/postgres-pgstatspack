@@ -21,8 +21,11 @@ $ ./bin/pgstatspack_report.sh    #生成报告
 $ ./bin/delete_snapshot.sh      #删除snapshot
 
 #4.定时器情况
+#
 /usr/bin/crontab -l
+#
 */2 * * * * /usr/share/pgstatspack/bin/snapshot.sh
+#
 0 6 * * * /usr/share/pgstatspack/bin/pgstatspack_report.sh
 
 
