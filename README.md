@@ -8,11 +8,11 @@ docker run --name=postgres-pgstatspack -d -p 15432:5432 -e POSTGRES_PASSWORD=888
 docker exec -it <容器id> /bin/bash
 
 #3.监控工具pgstatspack
-#（1）使用用户
+#（1）请使用用户
 su postgres
 #（2）安装目录
 /usr/share/pgstatspack
-#（3）
+#（3）如何监控
 #
 $ cd /usr/share/pgstatspack
 #
@@ -26,7 +26,7 @@ $ ./bin/pgstatspack_report.sh    #生成报告
 #
 $ ./bin/delete_snapshot.sh      #删除snapshot
 
-#4.定时器情况
+#4.默认定时器
 #
 /usr/bin/crontab -l
 #
