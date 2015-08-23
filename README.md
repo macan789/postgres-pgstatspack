@@ -1,0 +1,2 @@
+# postgres-pgstatspack
+pgstatspack把每次采集的snap信息存在数据库里，然后可以对2个snap信息进行比较生成文本的性能报告。
