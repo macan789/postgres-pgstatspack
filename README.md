@@ -1,10 +1,14 @@
 # postgres-pgstatspack
 pgstatspack把每次采集的snap信息存在数据库里，然后可以对多个snap信息进行比较生成文本的性能报告。
 
-#1.创建容器，举例
+#1.镜像构建及容器创建
+#
+docker pull postgres:latest
+#
+docker build -t macan789/postgres-pgstatspack:v1.1 .
+#
 docker run --name=postgres-pgstatspack -d -p 15432:5432 -e POSTGRES_PASSWORD=888888 macan789/postgres-pgstatspack:v1.1
-
-#2.进入容器
+#
 docker exec -it <容器id> /bin/bash
 
 #3.监控工具pgstatspack
