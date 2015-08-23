@@ -23,6 +23,7 @@ $ ./bin/pgstatspack_report.sh    #生成报告
 $ ./bin/delete_snapshot.sh      #删除snapshot
 
 
+
 #定时器情况
 cd /usr/bin/crontab
 root@698faa731978:/usr/share/pgstatspack# /usr/bin/crontab -l
