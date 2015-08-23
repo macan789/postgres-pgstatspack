@@ -18,7 +18,7 @@ $ cd /usr/share/pgstatspack
 #
 $ su postgres
 #
-$ ./install_pgstats.sh       #安装pgstats （除了默认的数据库名postgres无法，可以创建一个数据库testdb即可开始创建快照并生成报告）
+$ ./install_pgstats.sh       #安装pgstats （如果默认数据库名postgres无法监控，可以另外创建一个数据库，如testdb，即可开始创建快照并生成报告）
 #
 $ ./bin/snapshot.sh          #创建snapshot，间隔执行（可通过crontab定时）
 #
